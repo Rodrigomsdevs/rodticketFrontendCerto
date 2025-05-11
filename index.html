@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RodTicket - Plataforma de Atendimento via WhatsApp</title>
+  <meta name="description"
+    content="RodTicket - Transforme suas conversas do WhatsApp em oportunidades de negócio com chatbots inteligentes, automações e insights avançados." />
+  <meta name="author" content="RodTicket" />
+
+
+
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+  <!-- PWA Tags -->
+  <meta name="theme-color" content="#25d366" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="RodTicket" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://rodticket.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RodTicket - A Melhor Plataforma de Atendimento no WhatsApp">
+  <meta property="og:description"
+    content="O RodTicket oferece uma plataforma completa para gestão de atendimento no WhatsApp, Instagram e Facebook. Teste 7 dias grátis e melhore seu suporte ao cliente!">
+  <meta property="og:image" content="https://rodticket.com/assets/images/og.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="rodticket.com">
+  <meta property="twitter:url" content="https://rodticket.com/">
+  <meta name="twitter:title" content="RodTicket - A Melhor Plataforma de Atendimento no WhatsApp">
+  <meta name="twitter:description"
+    content="O RodTicket oferece uma plataforma completa para gestão de atendimento no WhatsApp, Instagram e Facebook. Teste 7 dias grátis e melhore seu suporte ao cliente!">
+  <meta name="twitter:image" content="https://rodticket.com/assets/images/og.png">
+
+
+  <!-- Ícones para iOS -->
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+
+  <!-- Ícones para Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Registro do Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('Service Worker registrado com sucesso:', registration.scope);
+          })
+          .catch(error => {
+            console.log('Falha ao registrar o Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</body>
+
+</html>
